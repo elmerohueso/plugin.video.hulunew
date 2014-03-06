@@ -1,6 +1,8 @@
 ::CREDIT::
 All icons and fanart created by SamHill from XBMC forums
 
+v3.9.8 - fixed an error in common.py related to logging an error
+
 v3.9.7 - default ads on
 
 V3.9.6 - tidy-up unused files

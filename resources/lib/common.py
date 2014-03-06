@@ -240,7 +240,6 @@ def getFEED( url , postdata=None , proxy = False):
         response.close()
 
     except urllib2.URLError, e:
-        log( 'Error reason: ', e)
         heading = 'Error'
         message = e
         duration = 10000
