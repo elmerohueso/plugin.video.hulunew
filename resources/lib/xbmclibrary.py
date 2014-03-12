@@ -188,6 +188,8 @@ class Main:
 
        if os.path.isfile(nfo_fullpath) == False:
 
+#         print '\n'.join(str(p) for p in data)
+
          tvshowDetails = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n<tvshow>\n'
          try:
           tvshowDetails += '    <title>'+data.findtext('name').encode('utf-8').strip()+'</title>\n'
@@ -222,11 +224,41 @@ class Main:
           tvshowDetails += '    <plot>'+'</plot>\n'
 
          tvshowDetails += '    <genre>Hulu</genre>\n'
+         try:
+          tvshowDetails += '    <genre>'+data.findtext('genre').encode('utf-8').strip()+'</genre>\n'
+         except:
+          pass
 
          try:
           tvshowDetails += '    <season>'+data.findtext('total_seasons_count').encode('utf-8').strip()+'</season>\n'
          except:
           tvshowDetails += '    <season>'+'</season>\n'
+
+         try:
+          premiered = data.findtext('original_premiere_date').encode('utf-8').strip()
+          if "T" in premiered:
+            premiered = premiered.split("T")[0]
+          elif " " in premiered:
+            premiered = premiered.split(" ")[0]
+
+          tvshowDetails += '    <premiered>'+premiered+'</premiered>\n'
+         except:
+          tvshowDetails += '    <premiered>'+'</premiered>\n'
+
+         try:
+          if "-" in premiered:
+            tvyear = premiered.split("-")[0]
+          else:
+            tvyear = ""
+          tvshowDetails += '    <year>'+tvyear+'</year>\n'
+         except:
+          pass
+
+         try:
+          tvshowDetails += '    <studio>'+data.findtext('company_name').encode('utf-8').strip()+'</studio>\n'
+         except:
+          tvshowDetails += '    <studio>'+'</studio>\n'
+
 
          try:
           tvshowDetails += '    <episode>'+data.findtext('full_episodes_count').encode('utf-8').strip()+'</episode>\n'

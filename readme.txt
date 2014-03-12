@@ -1,6 +1,8 @@
 ::CREDIT::
 All icons and fanart created by SamHill from XBMC forums
 
+v3.9.9 - added premiered, year, additional genres and studio to tvshow.nfo on add subscriptions to library - note you need to delete old tvshow.nfo as it won't overwrite
+
 v3.9.8 - fixed an error in common.py related to logging an error
 
 v3.9.7 - default ads on
