@@ -32,8 +32,8 @@
         <setting id='enable_captions' type ="bool" label="30026" default="false"/>
         <setting type="sep" />
 		<setting id="quality" type="enum" lvalues="30015|30023|30024|30020|30025|30016|30017|30018" label="30004" default="1"/>
-		<setting id="defaultcdn" type="enum" lvalues="30028|30029|30030|30067" label="30027" default="3"/>
-		<setting id="fallbackcdn" type="enum" lvalues="30066|30067" label="30065" default="0"/>
+		<setting id="defaultcdn" type="enum" lvalues="30028|30029|30030" label="30027" default="1"/>
+		<setting id="fallbackcdn" type="enum" lvalues="30066|30067" label="30065" default="1"/>
 
 		<!--<setting id="swfverify" type ="bool" label="30031" default="true"/>-->		
 		<setting type="sep" />
