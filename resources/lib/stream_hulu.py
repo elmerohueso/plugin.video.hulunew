@@ -370,7 +370,10 @@ class Main:
             hostname = pathSplit[0]
             appName = protocolSplit[1].split(hostname + "/")[1]
 
-            SWFPlayer = 'http://download.hulu.com/huludesktop.swf'
+            if "edgecast" in cdn:
+               SWFPlayer = 'http://www.hulu.com/site-player/205970/player.swf?cb=205970'
+            else:
+               SWFPlayer = 'http://download.hulu.com/huludesktop.swf'
 
 
             if "level3" in cdn:
