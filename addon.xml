@@ -15,7 +15,7 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary>Hulu Updated video plugin</summary>
-    <description>Videos from Hulu.com./description>
+    <description>Videos from Hulu.com.</description>
     <disclaimer>Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
     <language>en</language>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
