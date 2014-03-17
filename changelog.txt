@@ -1,4 +1,6 @@
-v4.0.0 - fixed SWFPlayer used for edgecast
+[B]Version 4.0.0[/B]
+- fixed SWFPlayer used for edgecast
+- made edgecast default fallback
 
 v3.9.9 - added premiered, year, additional genres and studio to tvshow.nfo on add subscriptions to library - note you need to delete old tvshow.nfo as it won't overwrite
 
